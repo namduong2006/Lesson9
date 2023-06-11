@@ -7399,7 +7399,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 101029317520456835, guid: 20d534a53fdfabb4ebe6c42615a47c2e, type: 3}
       propertyPath: m_TagString
-      value: Ground
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 20d534a53fdfabb4ebe6c42615a47c2e, type: 3}
@@ -15437,7 +15437,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 101029317520456835, guid: 20d534a53fdfabb4ebe6c42615a47c2e, type: 3}
       propertyPath: m_TagString
-      value: Ground
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 20d534a53fdfabb4ebe6c42615a47c2e, type: 3}

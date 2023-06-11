@@ -96,11 +96,18 @@ public class Player : MonoBehaviour
         }
  
     }
-    private void OnCollisionEnter(Collision collision)
+    //private void OnCollisionEnter(Collision collision)
+    //{
+    //    if (collision.gameObject.CompareTag("Untagged"))
+    //    {
+    //        isJump = true;           
+    //    }
+    //}
+    private void OnTriggerEnter(Collider other)
     {
-        if (collision.gameObject.CompareTag("Untagged"))
+        if (other.gameObject.CompareTag("Untagged"))
         {
-            isJump = true;           
+            isJump = true;
         }
-    }    
+    }
 }
