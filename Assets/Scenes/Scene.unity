@@ -205,7 +205,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400168, guid: b235179bd2a63d1468dd430670338c55, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 400168, guid: b235179bd2a63d1468dd430670338c55, type: 3}
       propertyPath: m_LocalPosition.z
@@ -264,6 +264,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6095170187952269758, guid: fcb044bb744dac14dbc25dd7d0617f34, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 6095170188238823462, guid: fcb044bb744dac14dbc25dd7d0617f34, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 6192600529641444810, guid: fcb044bb744dac14dbc25dd7d0617f34, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -354,7 +362,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 1226942111}
   speedmove: 1
-  jump: 200
+  jump: 300
 --- !u!136 &1226942115
 CapsuleCollider:
   m_ObjectHideFlags: 0

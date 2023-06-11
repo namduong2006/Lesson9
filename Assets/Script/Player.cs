@@ -8,8 +8,9 @@ public class Player : MonoBehaviour
     private Animator anim;
     [SerializeField]private Rigidbody rb;    
     public float speedmove=1f;
-    public float jump = 200f;           
+    public float jump = 300f;           
     private bool isCrouch=false;
+    private bool isJump=true;
     void Start()
     {         
         anim = GetComponent<Animator>();
@@ -42,7 +43,7 @@ public class Player : MonoBehaviour
             Quaternion newRotation = Quaternion.LookRotation(movement, Vector3.up);
             transform.rotation = Quaternion.RotateTowards(transform.rotation, newRotation, 720f * Time.deltaTime);
         }
-        // chuyen dong animation walk
+        //chuyen dong animation walk
 
         if (h != 0 || v != 0)
         {
@@ -86,13 +87,20 @@ public class Player : MonoBehaviour
 
         // nhay
         
-       
-        if (Input.GetButtonDown("Jump"))
+        
+        if (Input.GetButtonDown("Jump")&&isJump==true)
         {
             rb.AddForce(Vector3.up * jump, ForceMode.Impulse);
             anim.Play("JumpUp");
+            isJump = false;
         }
  
     }
-    
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Untagged"))
+        {
+            isJump = true;           
+        }
+    }    
 }
